@@ -139,7 +139,7 @@ db.classes.insertMany([
     proficiency: "+2",
     features: [
       "Cantrips Known: 2",
-      "Spell Known: 4",
+      "Total Spell Known: 6",
       "Spell Slots: 2",
       "Spell Attack Bonus: 8 + Proficiency + Charisma Modifier",
       "Spell Save: Proficiency + Charisma Modifier"
@@ -194,6 +194,7 @@ db.classes.insertMany([
     proficiency: "+2",
     features: [
       "Cantrips Known: 3",
+      "Total Spells Known: 5",
       "Spell Slots: 2",
       "Spell Attack Bonus: 8 + Proficiency + Wisdom Modifier",
       "Spell Save: Proficiency + Wisdom Modifier",
@@ -256,6 +257,7 @@ db.classes.insertMany([
     proficiency: "+2",
     features: [
       "Cantrips Known: 2",
+      "Total Spells Known: 4",
       "Spell Slots: 2",
       "Spell Attack Bonus: 8 + Proficiency + Wisdom Modifier",
       "Spell Save: Proficiency + Wisdom Modifier",
@@ -644,11 +646,126 @@ db.classes.insertMany([
     proficiency: "+2",
     features: [
       "Cantrips Known: 4",
-      "Spell Known: 2",
+      "Total Spell Known: 6",
       "Spell Slots: 2",
       "Spell Attack Bonus: 8 + Proficiency + Charisma Modifier",
       "Spell Save: Proficiency + Charisma Modifier",
       "Sorcerous Origins: Choose a sorcerous Origin, which describes the source of your innate magical power, such as Draconic Bloodline."
+    ]
+  },
+  {
+    name: "Warlock",
+    equipment: {
+      weaponOne: [
+        "Light Crossbow 1D8 Piercing & 20 Bolts",
+        "Handaxe(2) 1D6 Slashing",
+        "Dagger 1D4 Piercing",
+        "Club 1D4 Bludgeoning",
+        "Greatclub 1D8 Bludgeoning",
+        "Light Hammer 1D4 Bludgeoning",
+        "Mace 1D6 Bludgeoning",
+        "Quarterstaff 1D6 Bludgeoning",
+        "Sickle 1D4 Slashing",
+        "Spear 1D6 Piercing",
+        "Javelin 1D6 Slashing"
+      ],
+      weaponTwo: [
+        "Handaxe(2) 1D6 Slashing",
+        "Dagger 1D4 Piercing",
+        "Club 1D4 Bludgeoning",
+        "Greatclub 1D8 Bludgeoning",
+        "Light Hammer 1D4 Bludgeoning",
+        "Mace 1D6 Bludgeoning",
+        "Quarterstaff 1D6 Bludgeoning",
+        "Sickle 1D4 Slashing",
+        "Spear 1D6 Piercing",
+        "Javelin 1D6 Slashing"
+      ],
+      toolsNum: 1,
+      tools: [
+        "Component Pouch",
+        "Arcane Focus"
+      ],
+      pack: [
+        "Scholar's Pack",
+        "Dungeoneer's Pack",
+      ],
+      extraItems: [
+        "Dagger(2) 1D4 Piercing",
+      ]
+    },
+    armour: [
+      "Leather Armour"
+    ],
+    savingThrows: [
+      "Wisdom",
+      "Charisma"
+    ],
+    skillCount: 2,
+    skills: [
+      "Arcana",
+      "Deception",
+      "History",
+      "Intimidation",
+      "Investigation",
+      "Nature",
+      "Religion",
+    ],
+    hitDie: "D8",
+    proficiency: "+2",
+    features: [
+      "Otherworldy Patron: At 1st Level, you have struck a bargain with an otherworldly being of your choice, such as The Fiend.",
+      "Pact Magic: Your arcane Research and the magic bestowed on you by your patron have given you facility with Spells.",
+      "Cantrips Known: 2",
+      "Total Spell Known: 2",
+      "Spell Slots: 0",
+      "Spell Attack Bonus: 8 + Proficiency + Charisma Modifier",
+      "Spell Save: Proficiency + Charisma Modifier",
+      "Sorcerous Origins: Choose a sorcerous Origin, which describes the source of your innate magical power, such as Draconic Bloodline."
+    ]
+  },
+  {
+    name: "Wizard",
+    equipment: {
+      weaponOne: [
+        "Dagger 1D4 Piercing",
+        "Quarterstaff 1D6 Bludgeoning",
+      ],
+      toolsNum: 1,
+      tools: [
+        "Component Pouch",
+        "Arcane Focus"
+      ],
+      pack: [
+        "Scholar's Pack",
+        "Explorer's Pack",
+      ],
+      extraItems: [
+        "A Spellbook",
+      ]
+    },
+    savingThrows: [
+      "Wisdom",
+      "Intelligence"
+    ],
+    skillCount: 2,
+    skills: [
+      "Arcana",
+      "History",
+      "Insight",
+      "Investigation",
+      "Medicine",
+      "Religion",
+    ],
+    hitDie: "D6",
+    proficiency: "+2",
+    features: [
+      "Arcane Recovery: You have learned to regain some of your magical energy by studying your Spellbook. Once per day when you finish a Short Rest, you can choose expended Spell Slots to recover. The Spell Slots can have a combined level that is equal to or less than half your Wizard level (rounded up), and none of the slots can be 6th level or higher.",
+      "Cantrips Known: 3",
+      "Total Spell Known: 9",
+      "Spell Slots: 2",
+      "Spell Attack Bonus: 8 + Proficiency + Intelligence Modifier",
+      "Spell Save: Proficiency + Intelligence Modifier"
     ]
   },
 ]);
@@ -656,15 +773,156 @@ db.classes.insertMany([
 
 db.races.insertMany([
   {
-    name: "Human"
+    name: "Dragonborn",
+    abilityScoreIncrease: {
+      strength: 2,
+      charisma: 1
+    },
+    speed: 30,
+    size: "Medium",
+    languages: [
+      "Common",
+      "Draconic"
+    ],
+    resistances: ["Based on ancestry"],
+    traits: {
+      ancestry:[
+        ["Black", "Breath Weapon: Acid", "5x30ft. line (Dex Save)", "DC: 8 + Con + Prof", "Damage: 2D6 failed, half on save"],
+        ["Blue", "Breath Weapon: Lightning", "5x30ft. line (Dex Save)", "DC: 8 + Con + Prof", "Damage: 2D6 failed, half on save"],
+        ["Brass", "Breath Weapon: Fire", "5x30ft. line (Dex Save)", "DC: 8 + Con + Prof", "Damage: 2D6 failed, half on save"],
+        ["Bronze", "Breath Weapon: Lightning", "5x30ft. line (Dex Save)", "DC: 8 + Con + Prof", "Damage: 2D6 failed, half on save"],
+        ["Copper", "Breath Weapon: Acid", "5x30ft. line (Dex Save)", "DC: 8 + Con + Prof", "Damage: 2D6 failed, half on save"],
+        ["Gold", "Breath Weapon: Fire", "15ft. cone (Dex Save)", "DC: 8 + Con + Prof", "Damage: 2D6 failed, half on save"],
+        ["Green", "Breath Weapon: Poison", "15ft. cone (Con Save)", "DC: 8 + Con + Prof", "Damage: 2D6 failed, half on save"],
+        ["Red", "Breath Weapon: Fire", "15ft. cone (Dex Save)", "DC: 8 + Con + Prof", "Damage: 2D6 failed, half on save"],
+        ["Silver", "Breath Weapon: Cold", "15ft. cone Con Save)", "DC: 8 + Con + Prof", "Damage: 2D6 failed, half on save"],
+        ["White", "Breath Weapon: Cold", "15ft. cone Con Save)", "DC: 8 + Con + Prof", "Damage: 2D6 failed, half on save"],
+      ]
+    }
   },
   {
-    name: "Orc"
+    name: "Dwarf",
+    abilityScoreIncrease: {
+      constitution: 2
+    },
+    speed: 25,
+    size: "Medium",
+    languages: [
+      "Common",
+      "Dwarvish"
+    ],
+    resistances: ["Poison"],
+    traits: [
+      "Darkvision: 60ft",
+      "Dwarven Resilience: You have advantage on Saving Throws against poison, and you have Resistance against poison damage.",
+      "Dwarven Combat Training: You have proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.",
+      "Tool Proficiency: You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools.",
+      "Stonecunning: Whenever you make an Intelligence (History) check related to the Origin of stonework, you are considered proficient in the History skill and add double your Proficiency Bonus to the check, instead of your normal Proficiency Bonus."
+    ]
   },
-  {
-    name: "Elf"
-  },
-  {
-    name: "Dwarf"
-  }
+  // {
+  //   name: "Elf",
+  //   abilityScoreIncrease: {
+  //
+  //   },
+  //   speed: ,
+  //   size: "",
+  //   languages: [
+  //     "Common",
+  //   ],
+  //   resistances: ,
+  //   traits: [
+  //
+  //   ]
+  // },
+  // {
+  //   name: "Gnome",
+  //   abilityScoreIncrease: {
+  //
+  //   },
+  //   speed: ,
+  //   size: "",
+  //   languages: [
+  //     "Common",
+  //   ],
+  //   resistances: ,
+  //   traits: [
+  //
+  //   ],
+  // },
+  // {
+  //   name: "Half-Elf",
+  //   abilityScoreIncrease: {
+  //
+  //   },
+  //   speed: ,
+  //   size: "",
+  //   languages: [
+  //     "Common",
+  //   ],
+  //   resistances: ,
+  //   traits: [
+  //
+  //   ]
+  // },
+  // {
+  //   name: "Half-Orc",
+  //   abilityScoreIncrease: {
+  //
+  //   },
+  //   speed: ,
+  //   size: "",
+  //   languages: [
+  //     "Common",
+  //   ],
+  //   resistances: ,
+  //   traits: [
+  //
+  //   ]
+  // },
+  // {
+  //   name: "Halfling",
+  //   abilityScoreIncrease: {
+  //
+  //   },
+  //   speed: ,
+  //   size: "",
+  //   languages: [
+  //     "Common",
+  //   ],
+  //   resistances: ,
+  //   traits: [
+  //
+  //   ]
+  // },
+  // {
+  //   name: "Human",
+  //   abilityScoreIncrease: {
+  //
+  //   },
+  //   speed: ,
+  //   size: "",
+  //   languages: [
+  //     "Common",
+  //   ],
+  //   resistances: ,
+  //   traits: [
+  //
+  //   ]
+  // },
+  // {
+  //   name: "Tiefling",
+  //   abilityScoreIncrease: {
+  //
+  //   },
+  //   speed: ,
+  //   size: "",
+  //   languages: [
+  //     "Common",
+  //   ],
+  //   resistances: ,
+  //   traits: [
+  //     "Darkvision: 60ft",
+  //   ]
+  // },
 ]);
