@@ -399,7 +399,256 @@ db.classes.insertMany([
     proficiency: "+2",
     features: [
       "Unarmoured Defense: Beginning at 1st Level, while you are wearing no armor and not wielding a Shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.",
-      "Martial Arts: Your practice of martial arts gives you mastery of Combat styles that use unarmed strikes and monk Weapons, which are shortswords and any simple Melee Weapons that don't have the Two-Handed or heavy property. You gain the following benefits while you are unarmed or wielding only monk Weapons and you aren't wearing armor or wielding a Shield. You can use Dexterity instead of Strength for the Attack and Damage Rolls of your unarmed strikes and monk Weapons.You can roll a d4 in place of the normal damage of your Unarmed Strike or monk weapon. When you use the Attack action with an Unarmed Strike or a monk weapon on Your Turn, you can make one Unarmed Strike as a Bonus Action. For example, if you take the Attack action and Attack with a Quarterstaff, you can also make an Unarmed Strike as a Bonus Action, assuming you haven't already taken a Bonus Action this turn."
+      "Martial Arts: Your practice of martial arts gives you mastery of Combat styles that use unarmed strikes and monk Weapons, which are shortswords and any simple Melee Weapons that don't have the Two-Handed or heavy property. </br>You gain the following benefits while you are unarmed or wielding only monk Weapons and you aren't wearing armor or wielding a Shield. </br>You can use Dexterity instead of Strength for the Attack and Damage Rolls of your unarmed strikes and monk Weapons. </br>You can roll a d4 in place of the normal damage of your Unarmed Strike or monk weapon. </br>When you use the Attack action with an Unarmed Strike or a monk weapon on Your Turn, you can make one Unarmed Strike as a Bonus Action. For example, if you take the Attack action and Attack with a Quarterstaff, you can also make an Unarmed Strike as a Bonus Action, assuming you haven't already taken a Bonus Action this turn."
+    ]
+  },
+  {
+    name: "Paladin",
+    equipment: {
+      weaponOne: [
+        "Shield",
+        "Greataxe 1D12 Slashing",
+        "Battleaxe 1D8 Slashing",
+        "Glaive 1D10 Slashing",
+        "Warhammer 1D8 Bludgeoning",
+        "Flail 1D8 Bludgeoning",
+        "Greatsword 2D6 Slashing",
+        "Halberd 1D10 Slashing",
+        "Lance 1D12 Piercing",
+        "Longsword 1D8 Slashing",
+        "Maul 2D6 Bludgeoning",
+        "Morningstar 1D8 Piercing",
+        "Pike 1D10 Piercing",
+        "Rapier 1D8 Piercing",
+        "Scimitar 1D6 Piercing",
+        "Shortsword 1D6 Piercing",
+        "Trident 1D6 Piercing",
+        "War Pick 1D8 Piercing",
+        "Warhammer 1D8 Bludgeoning",
+        "Whip 1D4 Slashing",
+        "Hand Crossbow 1D6 Piercing",
+	      "Heavy Crossbow 1D10 Piercing",
+	      "Longbow 1D8 Piercing",
+      ],
+      weaponTwo: [
+        "Greataxe 1D12 Slashing",
+        "Battleaxe 1D8 Slashing",
+        "Glaive 1D10 Slashing",
+        "Warhammer 1D8 Bludgeoning",
+        "Flail 1D8 Bludgeoning",
+        "Greatsword 2D6 Slashing",
+        "Halberd 1D10 Slashing",
+        "Lance 1D12 Piercing",
+        "Longsword 1D8 Slashing",
+        "Maul 2D6 Bludgeoning",
+        "Morningstar 1D8 Piercing",
+        "Pike 1D10 Piercing",
+        "Rapier 1D8 Piercing",
+        "Scimitar 1D6 Piercing",
+        "Shortsword 1D6 Piercing",
+        "Trident 1D6 Piercing",
+        "War Pick 1D8 Piercing",
+        "Warhammer 1D8 Bludgeoning",
+        "Whip 1D4 Slashing",
+        "Hand Crossbow 1D6 Piercing",
+	      "Heavy Crossbow 1D10 Piercing",
+	      "Longbow 1D8 Piercing",
+      ],
+      pack: [
+        "Explorer's Pack",
+        "Priest's Pack"
+      ],
+      extraItems: [
+        "Javelins(5) 1D6 Slashing"
+      ]
+    },
+    armour: [
+      "Chain Mail"
+    ],
+    savingThrows: [
+      "Wisdom",
+      "Charisma"
+    ],
+    skillCount: 2,
+    skills: [
+      "Athletics",
+      "Insight",
+      "Intimidation",
+      "Medicine",
+      "Persuasion",
+      "Religion"
+    ],
+    hitDie: "D10",
+    proficiency: "+2",
+    features: [
+      "Divine Sense: The presence of strong evil registers on your Senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any Celestial, fiend, or Undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the Vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the Hallow spell. </br>You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a Long Rest, you regain all expended uses.",
+      "Lay On Hands: Your blessed touch can heal wounds. You have a pool of Healing power that replenishes when you take a Long Rest. With that pool, you can restore a total number of Hit Points equal to your Paladin level x 5. </br>As an action, you can touch a creature and draw power from the pool to restore a number of Hit Points to that creature, up to the maximum amount remaining in your pool. </br>Alternatively, you can expend 5 Hit Points from your pool of Healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple Diseases and neutralize multiple Poisons with a single use of Lay on Hands, expending Hit Points separately for each one. </br>This feature has no effect on Undead and Constructs."
+    ]
+  },
+  {
+    name: "Ranger",
+    equipment: {
+      weaponOne: [
+        "Shortsword 1D6 Piercing",
+        "Handaxe 1D6 Slashing",
+        "Dagger 1D4 Piercing",
+        "Club 1D4 Bludgeoning",
+        "Greatclub 1D8 Bludgeoning",
+        "Light Hammer 1D4 Bludgeoning",
+        "Mace 1D6 Bludgeoning",
+        "Quarterstaff 1D6 Bludgeoning",
+        "Sickle 1D4 Slashing",
+        "Spear 1D6 Piercing",
+	      "Javelins(4) 1D6 Slashing"
+      ],
+      weaponTwo: [
+        "Shortsword 1D6 Piercing",
+        "Handaxe 1D6 Slashing",
+        "Dagger 1D4 Piercing",
+        "Club 1D4 Bludgeoning",
+        "Greatclub 1D8 Bludgeoning",
+        "Light Hammer 1D4 Bludgeoning",
+        "Mace 1D6 Bludgeoning",
+        "Quarterstaff 1D6 Bludgeoning",
+        "Sickle 1D4 Slashing",
+        "Spear 1D6 Piercing",
+	      "Javelins(4) 1D6 Slashing"
+      ],
+      pack: [
+        "Explorer's Pack",
+        "Dungeoneer's Pack",
+      ],
+      extraItems: [
+        "Longbow 1D8 Piercing & 20 Arrows",
+      ]
+    },
+    armour: [
+      "Scale Mail",
+      "Leather Armour"
+    ],
+    savingThrows: [
+      "Strength",
+      "Dexterity"
+    ],
+    skillCount: 3,
+    skills: [
+      "Animal Handling",
+      "Athletics",
+      "Insight",
+      "Investigation",
+      "Nature",
+      "Perception",
+      "Stealth",
+      "Survival"
+    ],
+    hitDie: "D10",
+    proficiency: "+2",
+    features: [
+      "Favoured Enemy: Beginning at 1st Level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy. </br>Choose a type of favored enemy: Aberrations, Beasts, Celestials, Constructs, Dragons, Elementals, fey, Fiends, Giants, Monstrosities, oozes, Plants, or Undead. Alternatively, you can select two races of Humanoid (such as Gnolls and orcs) as favored enemies.</br>You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence Checks to recall information about them. </br>When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.",
+      "Natural Explorer: You are particularly familiar with one type of natural Environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: Arctic, coast, Desert, Forest, Grassland, Mountain, swamp, or The Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your Proficiency Bonus is doubled if you are using a skill that you're proficient in. </br>While traveling for an hour or more in your favored terrain, you gain the following benefits: </br>Difficult Terrain doesn't slow your group's Travel. </br>Your group can't become lost except by magical means. </br>Even when you are engaged in another Activity While Traveling (such as foraging, navigating, or tracking), you remain alert to danger. </br>If you are traveling alone, you can move stealthily at a normal pace. </br>When you Forage, you find twice as much food as you normally would. </br>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area."
+    ]
+  },
+  {
+    name: "Rogue",
+    equipment: {
+      weaponOne: [
+        "Shortsword 1D6 Piercing",
+        "Rapier 1D8 Piercing",
+      ],
+      weaponTwo: [
+        "Shortsword 1D6 Piercing",
+        "Shortbow 1D6 Piercing & 20 Arrows",
+      ],
+      pack: [
+        "Explorer's Pack",
+        "Dungeoneer's Pack",
+        "Burglar's Pack"
+      ],
+      extraItems: [
+        "Dagger(2) 1D4 Piercing",
+        "Thieves' Tools"
+      ]
+    },
+    armour: [
+      "Leather Armour"
+    ],
+    savingThrows: [
+      "Intelligence",
+      "Dexterity"
+    ],
+    skillCount: 4,
+    skills: [
+      "Acrobatics",
+      "Athletics",
+      "Deception",
+      "Insight",
+      "Intimidation",
+      "Investigation",
+      "Perception",
+      "Performance",
+      "Persuasion",
+      "Sleight of Hand",
+      "Stealth",
+    ],
+    hitDie: "D8",
+    proficiency: "+2",
+    features: [
+      "Expertise: At 1st Level, choose two of your skill Proficiencies, or one of your skill Proficiencies and your proficiency with Thieves' Tools. Your Proficiency Bonus is doubled for any ability check you make that uses either of the chosen Proficiencies.",
+      "Sneak Attack: Beginning at 1st Level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an Attack if you have advantage on the Attack roll. The Attack must use a Finesse or a ranged weapon. </br>You don't need advantage on the Attack roll if another enemy of the target is within 5 feet of it, that enemy isn't Incapacitated, and you don't have disadvantage on the Attack roll.",
+      "Thieves' Cant: During your rogue Training you learned thieves' cant, a Secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes four times longer to convey such a Message than it does to speak the same idea plainly. </br>In addition, you understand a set of Secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a Safe House for thieves on the run."
+    ]
+  },
+  {
+    name: "Sorcerer",
+    equipment: {
+      weaponOne: [
+        "Light Crossbow 1D8 Piercing & 20 Bolts",
+        "Handaxe(2) 1D6 Slashing",
+        "Dagger 1D4 Piercing",
+        "Club 1D4 Bludgeoning",
+        "Greatclub 1D8 Bludgeoning",
+        "Light Hammer 1D4 Bludgeoning",
+        "Mace 1D6 Bludgeoning",
+        "Quarterstaff 1D6 Bludgeoning",
+        "Sickle 1D4 Slashing",
+        "Spear 1D6 Piercing",
+	      "Javelin 1D6 Slashing"
+      ],
+      toolsNum: 1,
+      tools: [
+        "Component Pouch",
+        "Arcane Focus"
+      ],
+      pack: [
+        "Explorer's Pack",
+        "Dungeoneer's Pack",
+      ],
+      extraItems: [
+        "Dagger(2) 1D4 Piercing",
+      ]
+    },
+    savingThrows: [
+      "Constitution",
+      "Charisma"
+    ],
+    skillCount: 2,
+    skills: [
+      "Arcana",
+      "Deception",
+      "Insight",
+      "Intimidation",
+      "Perception",
+      "Religion",
+    ],
+    hitDie: "D6",
+    proficiency: "+2",
+    features: [
+      "Cantrips Known: 4",
+      "Spell Known: 2",
+      "Spell Slots: 2",
+      "Spell Attack Bonus: 8 + Proficiency + Charisma Modifier",
+      "Spell Save: Proficiency + Charisma Modifier",
+      "Sorcerous Origins: Choose a sorcerous Origin, which describes the source of your innate magical power, such as Draconic Bloodline."
     ]
   },
 ]);
