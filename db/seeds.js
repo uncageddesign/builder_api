@@ -880,51 +880,56 @@ db.races.insertMany([
       "Languages: You can speak, read, and write Common, Elvish, and one extra language of your choice."
     ]
   },
-  // {
-  //   name: "Half-Orc",
-  //   abilityScoreIncrease: {
-  //
-  //   },
-  //   speed: ,
-  //   size: "",
-  //   languages: [
-  //     "Common",
-  //   ],
-  //   resistances: ,
-  //   traits: [
-  //
-  //   ]
-  // },
-  // {
-  //   name: "Halfling",
-  //   abilityScoreIncrease: {
-  //
-  //   },
-  //   speed: ,
-  //   size: "",
-  //   languages: [
-  //     "Common",
-  //   ],
-  //   resistances: ,
-  //   traits: [
-  //
-  //   ]
-  // },
-  // {
-  //   name: "Human",
-  //   abilityScoreIncrease: {
-  //
-  //   },
-  //   speed: ,
-  //   size: "",
-  //   languages: [
-  //     "Common",
-  //   ],
-  //   resistances: ,
-  //   traits: [
-  //
-  //   ]
-  // },
+  {
+    name: "Half-Orc",
+    abilityScoreIncrease: {
+      strength: 2,
+      constitution: 1
+    },
+    speed: 30,
+    size: "Medium",
+    languages: [
+      "Common",
+      "Orc"
+    ],
+    traits: [
+      "Darkvision: 60ft",
+      "Menacing: You gain proficiency in the Intimidation skill.",
+      "Relentless Endurance: When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a Long Rest.",
+      "Savage Attacks: When you score a critical hit with a melee weapon Attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit."
+    ]
+  },
+  {
+    name: "Halfling",
+    abilityScoreIncrease: {
+      dexterity: 2
+    },
+    speed: 25,
+    size: "Small",
+    languages: [
+      "Common",
+      "Halfling"
+    ],
+    traits: [
+      "Lucky: When you roll a 1 on The D20 for an Attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.",
+      "Brave: You have advantage on Saving Throws against being Frightened.",
+      "Halfling Nimbleness: You can move through the space of any creature that is of a size larger than yours."
+    ]
+  },
+  {
+    name: "Human",
+    abilityScoreIncrease: {
+
+    },
+    speed: ,
+    size: "",
+    languages: [
+      "Common",
+    ],
+    traits: [
+
+    ]
+  },
   // {
   //   name: "Tiefling",
   //   abilityScoreIncrease: {
