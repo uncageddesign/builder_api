@@ -820,51 +820,66 @@ db.races.insertMany([
       "Stonecunning: Whenever you make an Intelligence (History) check related to the Origin of stonework, you are considered proficient in the History skill and add double your Proficiency Bonus to the check, instead of your normal Proficiency Bonus."
     ]
   },
-  // {
-  //   name: "Elf",
-  //   abilityScoreIncrease: {
-  //
-  //   },
-  //   speed: ,
-  //   size: "",
-  //   languages: [
-  //     "Common",
-  //   ],
-  //   resistances: ,
-  //   traits: [
-  //
-  //   ]
-  // },
-  // {
-  //   name: "Gnome",
-  //   abilityScoreIncrease: {
-  //
-  //   },
-  //   speed: ,
-  //   size: "",
-  //   languages: [
-  //     "Common",
-  //   ],
-  //   resistances: ,
-  //   traits: [
-  //
-  //   ],
-  // },
-  // {
-  //   name: "Half-Elf",
-  //   abilityScoreIncrease: {
-  //
-  //   },
-  //   speed: ,
-  //   size: "",
-  //   languages: [
-  //     "Common",
-  //   ],
-  //   resistances: ,
-  //   traits: [
-  //
-  //   ]
-  // },
+  {
+    name: "Elf",
+    abilityScoreIncrease: {
+      dexterity: 2
+    },
+    speed: 30,
+    size: "Medium",
+    languages: [
+      "Common",
+      "Elvish"
+    ],
+    resistances: ["Sleep Charm"],
+    traits: [
+      "Darkvision: 60ft",
+      "Keen Senses: You have proficiency in the Perception skill.",
+      "Fey Ancestry: You have advantage on Saving Throws against being Charmed, and magic can’t put you to sleep.",
+      "Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
+    ]
+  },
+  {
+    name: "Gnome",
+    abilityScoreIncrease: {
+      Intelligence: 2
+    },
+    speed: 25,
+    size: "Small",
+    languages: [
+      "Common",
+      "Gnomish"
+    ],
+    traits: [
+      "Darkvision: 60ft",
+      "Gnome Cunning: You have advantage on all Intelligence, Wisdom, and Charisma Saving Throws against magic."
+    ],
+  },
+  {
+    name: "Half-Elf",
+    abilityScoreIncrease: {
+      //TODO: player has to select two to increase
+      // strength: 1,
+      // dexterity: 1,
+      // constitution: 1,
+      // intelligence: 1,
+      // wisdom: 1,
+      charisma: 2
+    },
+    speed: 30,
+    size: "Medium",
+    languages: [
+      "Common",
+      "Elvish"
+    ],
+    resistances: ["Sleep Charm"],
+    traits: [
+      "Darkvision: 60ft",
+      "Fey Ancestry: You have advantage on Saving Throws against being Charmed, and magic can’t put you to sleep.",
+      "Skill Versatility: You gain proficiency in two Skills of your choice.",
+      "Languages: You can speak, read, and write Common, Elvish, and one extra language of your choice."
+    ]
+  },
   // {
   //   name: "Half-Orc",
   //   abilityScoreIncrease: {
