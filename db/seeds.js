@@ -919,30 +919,39 @@ db.races.insertMany([
   {
     name: "Human",
     abilityScoreIncrease: {
-
+      strength: 1,
+      dexterity: 1,
+      constitution: 1,
+      intelligence: 1,
+      wisdom: 1,
+      charisma: 1
     },
-    speed: ,
-    size: "",
+    speed: 30,
+    size: "Medium",
     languages: [
       "Common",
     ],
     traits: [
-
+      "Languages: You can speak, read, and write Common and one extra language of your choice. Humans typically learn the Languages of other peoples they deal with, including obscure dialects."
     ]
   },
-  // {
-  //   name: "Tiefling",
-  //   abilityScoreIncrease: {
-  //
-  //   },
-  //   speed: ,
-  //   size: "",
-  //   languages: [
-  //     "Common",
-  //   ],
-  //   resistances: ,
-  //   traits: [
-  //     "Darkvision: 60ft",
-  //   ]
-  // },
+  {
+    name: "Tiefling",
+    abilityScoreIncrease: {
+      intelligence: 1,
+      charisma: 2
+    },
+    speed: 30,
+    size: "Medium",
+    languages: [
+      "Common",
+      "Infernal"
+    ],
+    resistances: "Fire Damage",
+    traits: [
+      "Darkvision: 60ft",
+      "Hellish Resistance: You have Resistance to fire damage.",
+      "Infernal Legacy. You know the Thaumaturgy cantrip. When you reach 3rd Level, you can cast the Hellish Rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a Long Rest. When you reach 5th Level, you can cast the Darkness spell once with this trait and regain the ability to do so when you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells."
+    ]
+  },
 ]);
