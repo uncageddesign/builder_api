@@ -1,5 +1,5 @@
-use character_builder;
-db.dropDatabase();
+// use character_builder;
+// db.dropDatabase();
 
 db.classes.insertMany([
   {
@@ -858,12 +858,11 @@ db.races.insertMany([
   {
     name: "Half-Elf",
     abilityScoreIncrease: {
-      //TODO: player has to select two to increase
-      // strength: 1,
-      // dexterity: 1,
-      // constitution: 1,
-      // intelligence: 1,
-      // wisdom: 1,
+      strength: 1,
+      dexterity: 1,
+      constitution: 1,
+      intelligence: 1,
+      wisdom: 1,
       charisma: 2
     },
     speed: 30,
